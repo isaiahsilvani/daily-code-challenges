@@ -42,8 +42,7 @@ addOne(-5) //=> -4
 
 
 
-
-/*-----------------------------------------------------------------------------
+/*------------------------------------------------------------------------
 Challenge: 02-addTwoNumbers
 
 Difficulty: Basic
@@ -52,7 +51,16 @@ Prompt:
 
 - Write a function called addTwoNumbers that accepts two numeric arguments and returns the sum of those two numbers.
 - If either argument is not a number, return the value of NaN.
-
+--------*/
+function addTwoNumbers(num1, num2) {
+  //check if they are nums
+  if (isNaN(num1) || isNaN(num2)) {
+    return Nan;
+  } else {
+    return num1 + num2;
+  }
+}
+/*-----
 Examples:
 
 addTwoNumbers(5, 10) //=> 15
